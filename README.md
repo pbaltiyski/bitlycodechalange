@@ -2,7 +2,40 @@
 
 # Overview
 
-This Python script is designed to preprocess JSON and CSV files, load them into Pandas DataFrames, perform data processing, and generate a JSON output. The script is structured with several functions to achieve specific tasks.
+This Python script is designed to read the source data , load them into Pandas DataFrames, perform data processing (grouping and aggregating), and generate a JSON output. The script is structured with several functions to achieve specific tasks.
+
+# Design overview
+
+## Source data
+* encode.csv: the act of shortening a long link into a bitlink on the Bitly platform.
+* decode.json: a metric collected each time a bitlink is accessed and performs the redirect. The data in the file provided is not very well structured. This is the reason why it required preprocessing
+
+## Process design
+
+### Overview
+Pandas library is chosen because of the ease of processing and executing SQL like operations on data.
+
+### Preprocess decode json
+As mentioned above the file is not following the json standards. Because of it the following is required:
+* Add '[' in the beginning and ']' at the end of the script
+* Add a comma at the end of each {} block 
+
+### Load the process json in pandas dataframe
+Load the data in to pandas dataframe
+
+### Load and preprocess the encode
+The process is loading the CSV file and generating the bitlink
+
+### Process data
+The following operations are executed:
+* Filter the decodes for only year 2021
+* Join the encodes and decodes based on bitlink
+* Group and count the records by longlinc
+
+### Export the data in json format
+The steps export the dataframe to dictionary and dump the data to result.json file.
+
+
 
 # Script Structure
 
@@ -59,6 +92,8 @@ Check the result in the specified output files.
 <strong>encodes.csv</strong>: Input CSV file.
 
 <strong>result.json</strong>: Final processed output.
+
+The result files are uploaded for clarity.
 
 ### Dependencies
 
