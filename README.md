@@ -6,7 +6,7 @@ This Python script is designed to preprocess JSON and CSV files, load them into 
 
 # Script Structure
 
-# 1. prepare_json_file
+## 1. prepare_json_file
 Purpose: Preprocess the input JSON file to prepare it for loading into a Pandas DataFrame.
 
 Parameters:
