@@ -51,14 +51,14 @@ make
 ```
 
 Check the result in the specified output files.
-File Structure
-### decodes.json: Input JSON file.
+### File Structure
+<strong>decodes.json</strong>: Input JSON file.
 
-### decodes_preprocessed.json: Output of the preprocessing step.
+<strong>decodes_preprocessed.json</strong>: Output of the preprocessing step.
 
-### encodes.csv: Input CSV file.
+<strong>encodes.csv</strong>: Input CSV file.
 
-### result.json: Final processed output.
+<strong>result.json</strong>: Final processed output.
 
 ### Dependencies
 
