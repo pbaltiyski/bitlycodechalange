@@ -30,7 +30,7 @@ The process is loading the CSV file and generating the bitlink
 The following operations are executed:
 * Filter the decodes for only year 2021
 * Join the encodes and decodes based on bitlink
-* Group and count the records by longlinc
+* Group and count the records by longlink
 
 ### Export the data in json format
 The steps export the dataframe to dictionary and dump the data to result.json file.
