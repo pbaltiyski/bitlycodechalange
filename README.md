@@ -84,6 +84,15 @@ make
 ```
 
 Check the result in the specified output files.
+
+### Unittest
+
+The unittests are created in the file test_bcc.py. They should be invoked by the script below
+
+```bash
+python -m unittest test_bcc.py
+```
+
 ### File Structure
 <strong>decodes.json</strong>: Input JSON file.
 
@@ -98,6 +107,8 @@ The result files are uploaded for clarity.
 ### Dependencies
 
 pandas
+unittest
+
 
 # Notes
 
